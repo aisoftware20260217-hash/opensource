@@ -27,12 +27,11 @@ opensource/
 │   └── project-proposal.docx
 ├── src/
 │   └── photo_plan.py
-├── guess_number.py
 ├── LICENSE
 └── README.md
 ```
 
-프로젝트 제안서는 [제안서 파일](doc/project-proposal.docx)에서 확인할 수 있습니다. 기존 숫자 맞히기 실습 파일은 그대로 보관합니다.
+프로젝트 제안서는 [제안서 파일](doc/project-proposal.docx)에서 확인할 수 있습니다.
 
 ## 초기 프로그램 실행
 
