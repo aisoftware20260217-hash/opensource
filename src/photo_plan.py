@@ -12,6 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description="입체 사진 프로젝트의 처리 계획 출력")
     parser.add_argument("--image", required=True, type=Path, help="입력 사진 파일")
     args = parser.parse_args()
+    args.image = args.image.expanduser()
 
     if not args.image.is_file():
         parser.error("입력 사진 파일이 존재하지 않습니다.")
