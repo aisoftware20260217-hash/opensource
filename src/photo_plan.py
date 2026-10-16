@@ -19,6 +19,9 @@ def main():
     if args.image.suffix.lower() not in {".jpg", ".jpeg", ".png"}:
         parser.error("JPG 또는 PNG 파일을 선택해 주세요.")
 
+    if args.image.stat().st_size == 0:
+        parser.error("입력 사진 파일이 비어 있습니다.")
+
     plan = {
         "image": args.image.name,
         "stage": "planning_only",
